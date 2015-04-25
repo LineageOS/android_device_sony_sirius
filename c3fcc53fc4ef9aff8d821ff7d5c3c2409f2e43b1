@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da7fb54a_364b6e2d",
+        "filename": "cm.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2015-04-25T04:57:58Z",
+      "side": 1,
+      "message": "Forgot to remove the old ones?",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 28
+      },
+      "revId": "c3fcc53fc4ef9aff8d821ff7d5c3c2409f2e43b1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
