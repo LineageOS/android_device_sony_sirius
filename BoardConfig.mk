@@ -36,6 +36,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/sony/sirius
 
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/max1187x/wakeup_gesture"
+
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/sony/sirius/sepolicy
