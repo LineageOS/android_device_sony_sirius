@@ -52,6 +52,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
    
+# LCD
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.sf.lcd_density=480
+
+# USB path
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.usb.pid_suffix=1AF
+
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.use_data_netmgrd=true
+   
 # NFC
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
