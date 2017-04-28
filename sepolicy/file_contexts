@@ -1,3 +1,2 @@
 /sys/devices/f9964000.i2c/i2c-8/8-0048/glove -- u:object_r:sysfs_touch:s0
 /sys/devices/f9964000.i2c/i2c-8/8-0048/power/wakeup -- u:object_r:sysfs_touch:s0
-/ta(/.*)? -- u:object_r:ta_data_file:s0
