@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "29f2f661_132fa5df",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 2195
+      },
+      "writtenOn": "2017-07-24T11:47:46Z",
+      "side": 1,
+      "message": "Why add all files here?\nThe way we had it was for a same version, compare the modem files of d6503 and d6502. Only 3 differed.\n\nAdding them all will increase the size significantly, and need revisiting. So let\u0027s not keep it in this commit.",
+      "revId": "a1f60e58bc7d093ecb874799cca7fb8017b3876a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
