@@ -70,7 +70,6 @@ PRODUCT_COPY_FILES += \
 
 # Dalvik/HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # Include non-opensource parts
 $(call inherit-product, vendor/sony/sirius/sirius-vendor.mk)
