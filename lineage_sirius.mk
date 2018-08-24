@@ -1,5 +1,5 @@
-# Copyright (C) 2011 The Android Open Source Project
-# Copyright (C) 2013 The CyanogenMod Project
+#
+# Copyright (C) 2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+#
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -22,9 +20,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sirius device
 $(call inherit-product, device/sony/sirius/sirius.mk)
 
-# Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_sirius
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+PRODUCT_NAME := lineage_sirius
 PRODUCT_DEVICE := sirius
 PRODUCT_BRAND := Sony
-PRODUCT_MANUFACTURER := Sony
 PRODUCT_MODEL := Xperia Z2
+PRODUCT_MANUFACTURER := Sony
+
+PRODUCT_GMS_CLIENTID_BASE := android-sony
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="D6503-user 6.0.1 23.5.A.1.291 2769308465 release-keys"
+
+BUILD_FINGERPRINT := Sony/D6503/D6503:6.0.1/23.5.A.1.291/2769308465:user/release-keys
