@@ -35,6 +35,10 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/d6502.sh:d6502.sh
 
+# Lineage Hardware
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.sirius
+
 # Thermal manager
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/configs/thermanager.xml:system/etc/thermanager.xml

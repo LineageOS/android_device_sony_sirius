@@ -1,4 +1,5 @@
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2013-2016 The CyanogenMod Project
+#           (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +24,8 @@ TARGET_OTA_ASSERT_DEVICE := D6502,D6503,D6506,D6543,sirius
 
 TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
 
-BOARD_HARDWARE_CLASS += device/sony/sirius/lineagehw
+# HIDL
+DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_sirius_defconfig
