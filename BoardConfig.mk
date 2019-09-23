@@ -32,7 +32,6 @@ TARGET_KERNEL_CONFIG := lineageos_shinano_sirius_defconfig
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688 # 12656259072 - 16384
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/sony/sirius
