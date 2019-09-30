@@ -59,11 +59,6 @@ ro.usb.pid_suffix=1AF
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.use_data_netmgrd=true
 
-# NFC
-PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-brcm.conf \
-   $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf
-
 # Sensor
 PRODUCT_COPY_FILES += \
    $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
