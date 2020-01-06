@@ -37,12 +37,12 @@ PRODUCT_COPY_FILES += \
 
 # Thermal manager
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/thermanager.xml:system/etc/thermanager.xml
+   $(LOCAL_PATH)/configs/thermanager.xml:system/etc/thermanager.xml
 
 # Wifi
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/rootdir/system/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
-   
+   $(LOCAL_PATH)/configs/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+
 # LCD
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.sf.lcd_density=480
@@ -54,15 +54,15 @@ ro.usb.pid_suffix=1AF
 # RIL
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.use_data_netmgrd=true
-   
+
 # NFC
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-   $(LOCAL_PATH)/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
-   
+   $(LOCAL_PATH)/configs/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+   $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+
 # Sensor
 PRODUCT_COPY_FILES += \
-   $(LOCAL_PATH)/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
+   $(LOCAL_PATH)/configs/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
 
 # Dalvik/HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk)
