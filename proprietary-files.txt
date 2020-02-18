@@ -1,4 +1,4 @@
-# Audio ACDB
+# ACDB
 etc/acdbdata/Fluid/Fluid_Bluetooth_cal.acdb
 etc/acdbdata/Fluid/Fluid_General_cal.acdb
 etc/acdbdata/Fluid/Fluid_Global_cal.acdb
@@ -28,24 +28,24 @@ etc/acdbdata/Sony/Sony_Hdmi_cal.acdb
 etc/acdbdata/Sony/Sony_Headset_cal.acdb
 etc/acdbdata/Sony/Sony_Speaker_cal.acdb
 
-# ADSP
-etc/firmware/adsp.b00
-etc/firmware/adsp.b01
-etc/firmware/adsp.b02
-etc/firmware/adsp.b03
-etc/firmware/adsp.b04
-etc/firmware/adsp.b05
-etc/firmware/adsp.b06
-etc/firmware/adsp.b07
-etc/firmware/adsp.b08
-etc/firmware/adsp.b09
-etc/firmware/adsp.b10
-etc/firmware/adsp.b11
-etc/firmware/adsp.b12
-etc/firmware/adsp.mdt
+# ADSP firmware
+etc/firmware/adsp.b00:vendor/firmware/adsp.b00
+etc/firmware/adsp.b01:vendor/firmware/adsp.b01
+etc/firmware/adsp.b02:vendor/firmware/adsp.b02
+etc/firmware/adsp.b03:vendor/firmware/adsp.b03
+etc/firmware/adsp.b04:vendor/firmware/adsp.b04
+etc/firmware/adsp.b05:vendor/firmware/adsp.b05
+etc/firmware/adsp.b06:vendor/firmware/adsp.b06
+etc/firmware/adsp.b07:vendor/firmware/adsp.b07
+etc/firmware/adsp.b08:vendor/firmware/adsp.b08
+etc/firmware/adsp.b09:vendor/firmware/adsp.b09
+etc/firmware/adsp.b10:vendor/firmware/adsp.b10
+etc/firmware/adsp.b11:vendor/firmware/adsp.b11
+etc/firmware/adsp.b12:vendor/firmware/adsp.b12
+etc/firmware/adsp.mdt:vendor/firmware/adsp.mdt
 
 # Bluetooth
-etc/firmware/BCM43xx.hcd
+etc/firmware/BCM43xx.hcd:vendor/firmware/BCM43xx.hcd
 
 # Camera
 vendor/camera/LGI02BN1/cam_ctrl.dat
@@ -130,77 +130,65 @@ vendor/camera/SOI20BS0/scene_detector.dat
 vendor/camera/SOI20BS0/snapshot_ctrl.dat
 vendor/camera/SOI20BS0/streaming_ctrl.dat
 
-# HDCP
-etc/firmware/tzhdcp.b00
-etc/firmware/tzhdcp.b01
-etc/firmware/tzhdcp.b02
-etc/firmware/tzhdcp.b03
-etc/firmware/tzhdcp.mdt
-
-# Modem
-etc/firmware/mba.b00
-etc/firmware/mba.mdt
-etc/firmware/modem.b00
-etc/firmware/modem.b01
-etc/firmware/modem.b02
-etc/firmware/modem.b03
-etc/firmware/modem.b04
-etc/firmware/modem.b05
-etc/firmware/modem.b08
-etc/firmware/modem.b10
-etc/firmware/modem.b11
-etc/firmware/modem.b13
-etc/firmware/modem.b14
-etc/firmware/modem.b15
-etc/firmware/modem.b16
-etc/firmware/modem.b17
-etc/firmware/modem.b18
-etc/firmware/modem.b19
-etc/firmware/modem.b20
-etc/firmware/modem.b21
-etc/firmware/modem.b22
-etc/firmware/modem.b25
-etc/firmware/modem.b26
-etc/firmware/modem.b27
-etc/firmware/modem.mdt
-
-# Modem D6502
-etc/firmware/d6502/mba.b00
-etc/firmware/d6502/modem.b01
-etc/firmware/d6502/modem.mdt
+# Modem firmware
+etc/firmware/mba.b00:vendor/firmware/mba.b00
+etc/firmware/mba.mdt:vendor/firmware/mba.mdt
+etc/firmware/modem.b00:vendor/firmware/modem.b00
+etc/firmware/modem.b01:vendor/firmware/modem.b01
+etc/firmware/modem.b02:vendor/firmware/modem.b02
+etc/firmware/modem.b03:vendor/firmware/modem.b03
+etc/firmware/modem.b04:vendor/firmware/modem.b04
+etc/firmware/modem.b05:vendor/firmware/modem.b05
+etc/firmware/modem.b08:vendor/firmware/modem.b08
+etc/firmware/modem.b10:vendor/firmware/modem.b10
+etc/firmware/modem.b11:vendor/firmware/modem.b11
+etc/firmware/modem.b13:vendor/firmware/modem.b13
+etc/firmware/modem.b14:vendor/firmware/modem.b14
+etc/firmware/modem.b15:vendor/firmware/modem.b15
+etc/firmware/modem.b16:vendor/firmware/modem.b16
+etc/firmware/modem.b17:vendor/firmware/modem.b17
+etc/firmware/modem.b18:vendor/firmware/modem.b18
+etc/firmware/modem.b19:vendor/firmware/modem.b19
+etc/firmware/modem.b20:vendor/firmware/modem.b20
+etc/firmware/modem.b21:vendor/firmware/modem.b21
+etc/firmware/modem.b22:vendor/firmware/modem.b22
+etc/firmware/modem.b25:vendor/firmware/modem.b25
+etc/firmware/modem.b26:vendor/firmware/modem.b26
+etc/firmware/modem.b27:vendor/firmware/modem.b27
+etc/firmware/modem.mdt:vendor/firmware/modem.mdt
 
 # TFA98XX DSP
-etc/tfa98xx/btm.speaker
-etc/tfa98xx/coldboot.patch
-etc/tfa98xx/FMSpeaker_btm.eq
-etc/tfa98xx/FMSpeaker_btm.preset
-etc/tfa98xx/FMSpeaker_top.eq
-etc/tfa98xx/FMSpeaker_top.preset
-etc/tfa98xx/HiFiSpeaker_btm.eq
-etc/tfa98xx/HiFiSpeaker_btm.preset
-etc/tfa98xx/HiFiSpeakerRing_btm.eq
-etc/tfa98xx/HiFiSpeakerRing_btm.preset
-etc/tfa98xx/HiFiSpeakerRing_top.eq
-etc/tfa98xx/HiFiSpeakerRing_top.preset
-etc/tfa98xx/HiFiSpeakerSforce_btm.eq
-etc/tfa98xx/HiFiSpeakerSforce_btm.preset
-etc/tfa98xx/HiFiSpeakerSforce_top.eq
-etc/tfa98xx/HiFiSpeakerSforce_top.preset
-etc/tfa98xx/HiFiSpeaker_top.eq
-etc/tfa98xx/HiFiSpeaker_top.preset
-etc/tfa98xx/TFA9890_btm.config
-etc/tfa98xx/TFA9890.patch
-etc/tfa98xx/TFA9890_Receiver.config
-etc/tfa98xx/TFA9890_top.config
-etc/tfa98xx/top.speaker
-etc/tfa98xx/VoiceCallEarpice_top.eq
-etc/tfa98xx/VoiceCallEarpice_top.preset
-etc/tfa98xx/VoiceCallSpeaker_btm.eq
-etc/tfa98xx/VoiceCallSpeaker_btm.preset
-etc/tfa98xx/VoiceCallSpeaker_top.eq
-etc/tfa98xx/VoiceCallSpeaker_top.preset
+etc/tfa98xx/btm.speaker:vendor/etc/tfa98xx/btm.speaker
+etc/tfa98xx/coldboot.patch:vendor/etc/tfa98xx/coldboot.patch
+etc/tfa98xx/FMSpeaker_btm.eq:vendor/etc/tfa98xx/FMSpeaker_btm.eq
+etc/tfa98xx/FMSpeaker_btm.preset:vendor/etc/tfa98xx/FMSpeaker_btm.preset
+etc/tfa98xx/FMSpeaker_top.eq:vendor/etc/tfa98xx/FMSpeaker_top.eq
+etc/tfa98xx/FMSpeaker_top.preset:vendor/etc/tfa98xx/FMSpeaker_top.preset
+etc/tfa98xx/HiFiSpeaker_btm.eq:vendor/etc/tfa98xx/HiFiSpeaker_btm.eq
+etc/tfa98xx/HiFiSpeaker_btm.preset:vendor/etc/tfa98xx/HiFiSpeaker_btm.preset
+etc/tfa98xx/HiFiSpeakerRing_btm.eq:vendor/etc/tfa98xx/HiFiSpeakerRing_btm.eq
+etc/tfa98xx/HiFiSpeakerRing_btm.preset:vendor/etc/tfa98xx/HiFiSpeakerRing_btm.preset
+etc/tfa98xx/HiFiSpeakerRing_top.eq:vendor/etc/tfa98xx/HiFiSpeakerRing_top.eq
+etc/tfa98xx/HiFiSpeakerRing_top.preset:vendor/etc/tfa98xx/HiFiSpeakerRing_top.preset
+etc/tfa98xx/HiFiSpeakerSforce_btm.eq:vendor/etc/tfa98xx/HiFiSpeakerSforce_btm.eq
+etc/tfa98xx/HiFiSpeakerSforce_btm.preset:vendor/etc/tfa98xx/HiFiSpeakerSforce_btm.preset
+etc/tfa98xx/HiFiSpeakerSforce_top.eq:vendor/etc/tfa98xx/HiFiSpeakerSforce_top.eq
+etc/tfa98xx/HiFiSpeakerSforce_top.preset:vendor/etc/tfa98xx/HiFiSpeakerSforce_top.preset
+etc/tfa98xx/HiFiSpeaker_top.eq:vendor/etc/tfa98xx/HiFiSpeaker_top.eq
+etc/tfa98xx/HiFiSpeaker_top.preset:vendor/etc/tfa98xx/HiFiSpeaker_top.preset
+etc/tfa98xx/TFA9890_btm.config:vendor/etc/tfa98xx/TFA9890_btm.config
+etc/tfa98xx/TFA9890.patch:vendor/etc/tfa98xx/TFA9890.patch
+etc/tfa98xx/TFA9890_Receiver.config:vendor/etc/tfa98xx/TFA9890_Receiver.config
+etc/tfa98xx/TFA9890_top.config:vendor/etc/tfa98xx/TFA9890_top.config
+etc/tfa98xx/top.speaker:vendor/etc/tfa98xx/top.speaker
+etc/tfa98xx/VoiceCallEarpice_top.eq:vendor/etc/tfa98xx/VoiceCallEarpice_top.eq
+etc/tfa98xx/VoiceCallEarpice_top.preset:vendor/etc/tfa98xx/VoiceCallEarpice_top.preset
+etc/tfa98xx/VoiceCallSpeaker_btm.eq:vendor/etc/tfa98xx/VoiceCallSpeaker_btm.eq
+etc/tfa98xx/VoiceCallSpeaker_btm.preset:vendor/etc/tfa98xx/VoiceCallSpeaker_btm.preset
+etc/tfa98xx/VoiceCallSpeaker_top.eq:vendor/etc/tfa98xx/VoiceCallSpeaker_top.eq
+etc/tfa98xx/VoiceCallSpeaker_top.preset:vendor/etc/tfa98xx/VoiceCallSpeaker_top.preset
 
-# TouchScreen
+# Touchscreen
 etc/firmware/touch_chip_id_0x75_config_id_0x0241.bin
 etc/firmware/touch_chip_id_0x75_config_id_0x0251.bin
 etc/firmware/touch_chip_id_0x78_config_id_0x0108.bin
