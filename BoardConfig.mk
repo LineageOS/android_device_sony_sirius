@@ -16,19 +16,22 @@
 # inherit from the common shinano definitions
 include device/sony/shinano-common/BoardConfigCommon.mk
 
-# inherit from the proprietary version
-#-include vendor/sony/sirius/BoardConfigVendor.mk
+DEVICE_PATH := device/sony/sirius
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D6502,D6503,D6506,D6543,sirius
-
-TARGET_SPECIFIC_HEADER_PATH += device/sony/sirius/include
+TARGET_OTA_ASSERT_DEVICE := sirius
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(LOCAL_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
+# Include path
+TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_sirius_defconfig
+
+# Power
+TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/max1187x/wakeup_gesture"
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 25
@@ -36,8 +39,8 @@ BOARD_VOLD_MAX_PARTITIONS := 25
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/sony/sirius
 
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/max1187x/wakeup_gesture"
-
 # SELinux
-BOARD_SEPOLICY_DIRS += \
-    device/sony/sirius/sepolicy
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+# Inherit from proprietary files
+include vendor/sony/sirius/BoardConfigVendor.mk
