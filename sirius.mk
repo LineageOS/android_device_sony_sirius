@@ -26,7 +26,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # D6502
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/d6502.sh:d6502.sh
+    $(LOCAL_PATH)/recovery/d6502.sh:install/bin/d6502.sh
 
 # Hardware-specific permissions
 PRODUCT_COPY_FILES += \
