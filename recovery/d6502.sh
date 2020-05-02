@@ -1,11 +1,9 @@
 #!/sbin/sh
 
-mkdir -p /lta-label
-mount -o ro /dev/block/platform/msm_sdcc.1/by-name/LTALabel /lta-label
-ls lta-label/*.html | grep -q d6502
+strings /dev/block/bootdevice/by-name/LTALabel | grep D6502
 if [ $? -eq 0 ]; then
-	mount /dev/block/platform/msm_sdcc.1/by-name/system /system
-	cp /system/etc/firmware/d6502/* /system/etc/firmware/
-	umount /system
+    for i in $(ls /mnt/system/system/vendor/firmware/d6502/); do
+        mv /mnt/system/system/vendor/firmware/d6502/$i /mnt/system/system/vendor/firmware/
+    done
 fi
-umount /lta-label
+rm -rf /mnt/system/system/vendor/firmware/d6502/

@@ -157,6 +157,33 @@ etc/firmware/modem.b26:vendor/firmware/modem.b26
 etc/firmware/modem.b27:vendor/firmware/modem.b27
 etc/firmware/modem.mdt:vendor/firmware/modem.mdt
 
+# Modem firmware - from D6502
+etc/firmware/mba.b00:vendor/firmware/d6502/mba.b00|fcb3873a463c12441fe7e4cb8cf7f23847eea42a
+etc/firmware/mba.mdt:vendor/firmware/d6502/mba.mdt|73ec09d5160e0549afd812e6d3a10a612d35ac16
+etc/firmware/modem.b00:vendor/firmware/d6502/modem.b00|0908917d5d47ac62993a10afec0331cd9e0c5355
+etc/firmware/modem.b01:vendor/firmware/d6502/modem.b01|e0eb0592fa4b092fd3133d4586ba009f132c0b48
+etc/firmware/modem.b02:vendor/firmware/d6502/modem.b02|2cdec89c3c3ff8ba661cd8f702553fe9886321df
+etc/firmware/modem.b03:vendor/firmware/d6502/modem.b03|b15c3f641201cb664837686ad87dc07cc9d9fabf
+etc/firmware/modem.b04:vendor/firmware/d6502/modem.b04|8d75028486461208b4945de1d585f811fec02988
+etc/firmware/modem.b05:vendor/firmware/d6502/modem.b05|dbeb79ddac230c08597669d18bda37a4ba975367
+etc/firmware/modem.b08:vendor/firmware/d6502/modem.b08|7b4909bb71d69e7273ad1a24e03162ff4267b308
+etc/firmware/modem.b10:vendor/firmware/d6502/modem.b10|3a2ae01cfe6536af50356a8576aa9171d900146e
+etc/firmware/modem.b11:vendor/firmware/d6502/modem.b11|d7d659b9263827b2e713d41327f60f8e6bf4e5c6
+etc/firmware/modem.b13:vendor/firmware/d6502/modem.b13|2fe31be10259089fc6beaa9f837e0ea6219eacf6
+etc/firmware/modem.b14:vendor/firmware/d6502/modem.b14|d2349dad0efc85a317d5fbd0df5733fbe84715c5
+etc/firmware/modem.b15:vendor/firmware/d6502/modem.b15|fd9bb4f13b39ec06192b7e9e8c34b9b7490ced5a
+etc/firmware/modem.b16:vendor/firmware/d6502/modem.b16|67c9ad78b22adf46595ae7d5d139bb8d1e9abb98
+etc/firmware/modem.b17:vendor/firmware/d6502/modem.b17|3631875296baa9b035f0e2a60995f8b401bcca51
+etc/firmware/modem.b18:vendor/firmware/d6502/modem.b18|3c41f6d931d135104605340092b9945207d847b2
+etc/firmware/modem.b19:vendor/firmware/d6502/modem.b19|a6c4dc8ed089217b3fed2dfc7481ce20e0de5d67
+etc/firmware/modem.b20:vendor/firmware/d6502/modem.b20|d86174cb12da167d438af2bb2140bb8aa3245adf
+etc/firmware/modem.b21:vendor/firmware/d6502/modem.b21|d96954fa04ed4c081fd619f611546a24fe691255
+etc/firmware/modem.b22:vendor/firmware/d6502/modem.b22|c9143063b1913fe5fff54d04872a0cf665c52ae0
+etc/firmware/modem.b25:vendor/firmware/d6502/modem.b25|29cbc7d015782f168080defe761c5846e1eac739
+etc/firmware/modem.b26:vendor/firmware/d6502/modem.b26|152b4e6ddea7fe0cdd522be400216b1fe5973a5b
+etc/firmware/modem.b27:vendor/firmware/d6502/modem.b27|1f86d826b2d96cd8bb31d070544352c8971957f7
+etc/firmware/modem.mdt:vendor/firmware/d6502/modem.mdt|ca9552164a69a44d0eca6c9c0aafacbde4d79c8e
+
 # TFA98XX DSP
 etc/tfa98xx/btm.speaker:vendor/etc/tfa98xx/btm.speaker
 etc/tfa98xx/coldboot.patch:vendor/etc/tfa98xx/coldboot.patch
