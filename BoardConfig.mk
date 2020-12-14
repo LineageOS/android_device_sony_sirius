@@ -21,9 +21,6 @@ DEVICE_PATH := device/sony/sirius
 # Assert
 TARGET_OTA_ASSERT_DEVICE := sirius
 
-# HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-
 # Kernel properties
 TARGET_KERNEL_CONFIG := lineageos_shinano_sirius_defconfig
 
