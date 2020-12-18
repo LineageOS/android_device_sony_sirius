@@ -1,2 +1,2 @@
 # Touch
-genfscon sysfs /devices/f9964000.i2c/i2c-8/8-0048     u:object_r:sysfs_touch:s0
+genfscon sysfs /devices/f9964000.i2c/i2c-8/8-0048     u:object_r:sysfs_securetouch:s0
